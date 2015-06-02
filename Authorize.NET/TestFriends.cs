@@ -1,1 +1,3 @@
-﻿[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("AuthorizeNETtest")]
+﻿#if (DEBUG || TEST)
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("AuthorizeNETtest")]
+#endif

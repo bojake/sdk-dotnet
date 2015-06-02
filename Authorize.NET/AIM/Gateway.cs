@@ -82,6 +82,8 @@ namespace AuthorizeNet {
             var serviceUrl = TEST_URL;
             if (!TestMode)
                 serviceUrl = LIVE_URL;
+            else
+                request.TestRequest = "TRUE";
 
             LoadAuthorization(request);
             if(String.IsNullOrEmpty(request.Description))
